@@ -1,4 +1,4 @@
 # emikat
 
-"EMIKAT_ImpactCalculationModel": current version = “<DataModel> Clarity Data Model (Version 2)”
+"EMIKAT_ImpactCalculationModel.eap": current version = “<DataModel> Clarity Data Model (Version 2)”
   
