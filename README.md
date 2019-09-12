@@ -14,6 +14,7 @@ In this issue we will describe the flow of individual REST calls between Emikat 
 ## Individual REST endpoints
 ### 1) Initial Study information
 **Link**: csis.myclimateservice.eu/rest/emikat/study/[**StudyID**]
+
 This link will be given to Emikat in the initial trigger event from the CSIS. BasicAuth is used as authentication. Emikat can use the "Emikat" user in the CSIS, which was created for this purpose.
 This endpoint uses the [REST Group View](https://csis.myclimateservice.eu/admin/structure/views/view/rest_group/edit/rest_export_3) and displays the following properties:
 - **study_title**: Name of the Study
@@ -24,17 +25,32 @@ This endpoint uses the [REST Group View](https://csis.myclimateservice.eu/admin/
 - **study_area_bottom**: position of the bottom side of the bounding box
 - **path_data_package**: Link to the endpoint with additional information about the used data package
 - **path_resources**: Link to View endpoint showing all resources in that Study/datapackage
+- **path_selected_adaptation_options**: Link to View endpoint showing all selected Adaptation options in that Study
 
 ### 2) Data package information
 **Link**: csis.myclimateservice.eu/node/[**DatapackageID**]?_format=hal_json
+
 This endpoint is currently not implemented as a view, so the complete data package is displayed. This can be changed if necessary, so that only relevant fields are displayed.
 
 ### 3) Resources information
 **Link**: csis.myclimateservice.eu/rest/emikat/dp[**DatapackageID**]/resources
+
 This endpoint uses the [REST Node View](https://csis.myclimateservice.eu/admin/structure/views/view/rest_node/edit/rest_export_6) and displays the following properties:
 - **resource_description**: Description of resource (plain text)
 - **resource_format**: format of resource (Geojson, jpeg, Shapefile, ...)
 - **resource_url**: array of URLs to external source(s) of resource
+
+### 4) Selected Adaptation options overview
+**Link**: /rest/emikat/study/[**StudyID**]/selected_adaptation_options
+
+This endpoint uses the [REST Node View](https://csis.myclimateservice.eu/admin/structure/views/view/rest_node/edit/rest_export_7) and displays the following properties:
+- **path_selected_adaptation_option**: path to endpoint for the selected Adaptation option
+
+### 5) Adaptation option information
+**Link**: https://csis.myclimateservice.eu/node/**[AdaptationOptionID]**?_format=hal_json
+
+This endpoint is currently not implemented as a view, so the complete adaptation option is displayed. This can be changed if necessary, so that only relevant fields are displayed.
+
 <hr>
 
 ### additional REST endpoints ???  
