@@ -54,3 +54,29 @@ This endpoint is currently not implemented as a view, so the complete adaptation
 <hr>
 
 ### additional REST endpoints ???  
+
+## Relevant batch jobs for checking calculation results
+We have to adopt the test-metod against emikat:
+Only formulas from a list of "productive-formulas" should be tested.
+
+This list should be expanded, if new functionality is added.
+
+This list of formulas are:
+
+- Rebuild all views...
+- Rebuild Table CLY_IMPACT_RESULT_HW#1838
+- Rebuild Table CLY_HW_T_MRT#1856
+- Rebuild Table CLY_HW_FLUXES#1856
+- Rebuild Table CLY_HW_GRID_DETAILS_PROJ#1856
+- Rebuild Table CLY_HW_GRID_DETAILS#1856
+- Rebuild Table CLY_URBAN_ATLAS#1776
+- Rebuild Table CLY_AO_LAYER_PARAMS#1796
+- Rebuild Table CLY_EUROSTAT_CITIES_MORTALITY#2056
+- Rebuild Table CLY_EL_POPULATION_INTERPOLATED#2016
+- Rebuild Table CLY_UA_FRACTION#2016
+- Rebuild Table CLY_ADAPTATION_OPT_ITEM#1837
+- Rebuild Table CLY_ADAPTATION_OPTION#1837
+- Rebuild Table CLY_PROJECT#1837
+- Rebuild Table CLY_HAZARD_EVENTS_STUDY#2036
+- Rebuild Table CLY_GRID_ETRS89_1K#1757
+- Rebuild Table CLY_PARAMETER#1976
