@@ -53,7 +53,9 @@ This endpoint is currently not implemented as a view, so the complete adaptation
 
 <hr>
 
-### additional REST endpoints ???  
+### additional REST endpoints
+
+Complete description is on [CSIS Wiki](https://github.com/clarity-h2020/csis/wiki/Services-endpoints-(used-by-CSIS))
 
 ## Relevant batch jobs for checking calculation results
 We have to adopt the test-metod against emikat:
